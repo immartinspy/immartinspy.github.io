@@ -1,0 +1,144 @@
+body{
+	background-color: black;
+	color: green;
+	font-family: 'Overpass Mono', monospace;
+}
+
+header{
+	text-align: center;
+	font-size: 200%;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+
+span{
+	-webkit-animation: blink 1s infinite;  /* Safari 4+ */
+	-moz-animation: blink 1s infinite;  /* Fx 5+ */
+	-o-animation: blink 1s infinite;  /* Opera 12+ */
+	animation: blink 1s infinite;  /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes blink {
+  0%, 49% {
+    background-color: black;
+    color: green
+  }
+  50%, 100% {
+    background-color: green;
+    color: black;
+  }
+}
+
+nav{
+	text-align: center;
+}
+
+hr{
+	color: green;
+}
+
+article{
+	text-align: center;
+	width: 40%;
+	margin-left: 30%;
+	font-family: 'Overpass Mono', monospace;
+	padding-top: 2%;
+	white-space: pre-line;
+}
+
+footer{
+	text-align: center;
+}
+
+a:link, a:visited{
+	background-color: black;
+	color: green;
+	padding: 5px 18px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 1px 1px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
+	border: 1px solid green;
+}
+
+a:hover, a:active{
+	background-color: green;
+  color: black;
+}
+
+
+img{
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+
+.terminal{
+	font-size: 100%;
+}
+
+#intro a{
+	background-color: black;
+	color: green;
+	padding: 0px 0px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 1px 1px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
+	border: none;
+	text-decoration: underline;
+}
+
+#links{
+	background-color: black;
+	font-style: italic;
+	padding: 0px 0px;
+	color: blue;
+	text-decoration: none;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
+	border: none;
+	text-decoration: none;
+}
+
+table img{
+	width: 80%;
+	white-space: normal;
+}
+
+@media screen and (max-width: 700px) {
+	#home{
+		display: none
+	}
+	nav{
+		white-space: pre-line;
+	}
+	a{
+		margin-top: 20%;
+	}
+	header{
+		margin-top: 15%;
+	}
+	img{
+		width: 100%;
+	}
+	article{
+		width: 100%;
+		margin-left: 0%;
+	}
+}
+
+::selection {
+  background: green;
+  color: black;
+}
+::-moz-selection {
+  background: green;
+  color: black;
+}
